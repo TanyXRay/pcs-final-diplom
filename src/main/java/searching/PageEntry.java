@@ -1,7 +1,7 @@
+package searching;
+
 /**
  * Класс, описывающий один элемент результата одного поиска.
- * Он состоит из имени пдф-файла, номера страницы и количества раз,
- * которое встретилось это слово на ней
  */
 public class PageEntry implements Comparable<PageEntry> {
     private final String pdfName;

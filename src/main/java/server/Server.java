@@ -1,10 +1,17 @@
+package server;
+
 import com.google.gson.Gson;
+import searching.PageEntry;
+import searching.SearchEngine;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
 
+/**
+ * Класс-сервер
+ */
 public class Server {
     private static final int PORT = 8989;
     private static final Gson GSON = new Gson();
@@ -14,9 +21,6 @@ public class Server {
         this.searchEngine = searchEngine;
     }
 
-    /**
-     * Метод запуска сервера
-     */
     public void start() {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Starting server at " + PORT + "...");
