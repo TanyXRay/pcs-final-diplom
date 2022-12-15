@@ -9,7 +9,7 @@ import java.net.Socket;
 /**
  * Класс-клиент
  */
-public class ClientMain {
+public class Client {
     private static final int PORT = 8989;
     private static final String HOST = "localhost";
 
